@@ -1,4 +1,4 @@
-jSignature
+jSignature for Rails
 ==========
 
 Add to your gemfile 
