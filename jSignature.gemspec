@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.description = "The library gemify javascripts from jSignature"
   s.authors     = ["Mateusz Bilski"]
   s.email       = ["mbilski3@gmail.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/mbilski3/jSignature"
   s.license     = "MIT"
   s.files       = 
 [
