@@ -27,6 +27,10 @@ You can use helper method to add sign field to form:
 <%= sign_form_field(:name [, height [, width] ] ) %>
 
 which sends field 'name': data:image/png;base64,i1234lkj123;k4;l1j34l1kj3j... 
+
+defaults:
+  height: 200
+  width:  500
 ```
 
 License:
