@@ -44,3 +44,7 @@ MIT
 
 All files from app/assets/javascripts (except jsignature.js) directory are Copyright 2012 Willow Systems Corp
 ```
+
+Feedback
+==========
+If you are using this gem, give me a feedback. Nice to hear your suggestion for future developement
