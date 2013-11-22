@@ -3,7 +3,7 @@ jSignature for Rails
 
 Add to your gemfile 
 ``` ruby
-gem "jSignature", "~> 0.0.4"
+gem "jSignature", "~> 0.0.5"
 ```
 
 and run
