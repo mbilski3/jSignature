@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "jSignature"
-  s.version     = "0.0.3"
+  s.version     = "0.0.4"
   s.summary     = "jSignature gemify"
   s.date        = "2013-10-09"
   s.description = "The library gemify javascripts from jSignature"

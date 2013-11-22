@@ -2,16 +2,17 @@ include ActionView::Helpers::TagHelper
 
 module JSignature
   module ViewHelpers
+
     def sign_form_field_tag(name)
-      render :inline => "<%= text_field_tag(:#{name},\"\", :hidden => true) %>
-        <div id='#{name}_sig'></div><script> $(document).ready(function() {
+      return text_field_tag(:name,"", :hidden => true)+content_tag(:div,"",:id => "#{name}_sig")+
+      content_tag(:script,"$(document).ready(function() {
     var x = $('##{name}_sig');
     x.jSignature();
     x.change(function(){
       $('##{name}').val(x.jSignature('getData'));
     });
     
-  });</script>"
+  });".html_safe)
     end
 
     def sign_field(name)
