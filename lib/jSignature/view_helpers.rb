@@ -4,7 +4,7 @@ module JSignature
   module ViewHelpers
 
     def sign_form_field_tag(name)
-      return text_field_tag(:name,"", :hidden => true)+content_tag(:div,"",:id => "#{name}_sig")+
+      return text_field_tag(name,"", :hidden => true)+content_tag(:div,"",:id => "#{name}_sig")+
       content_tag(:script,"$(document).ready(function() {
     var x = $('##{name}_sig');
     x.jSignature();
