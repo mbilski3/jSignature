@@ -3,7 +3,7 @@ include ActionView::Helpers::TagHelper
 module JSignature
   module ViewHelpers
 
-    def sign_form_field_tag(name, format)
+    def sign_form_field_tag(name, format = 'svg')
       return text_field_tag(name,"", :hidden => true)+content_tag(:div,"",:id => "#{name}_sig")+
       content_tag(:script,"$(document).ready(function() {
     var x = $('##{name}_sig');
@@ -15,7 +15,7 @@ module JSignature
   });".html_safe)
     end
 
-    def sign_field(name, format)
+    def sign_field(name, format = 'svg')
       return text_field(name,:hidden => true)+content_tag(:div, "",:id => "#{name}_sig")+
       content_tag(:script, "$(document).ready(function() {
     var x = $('##{name}_sig');
